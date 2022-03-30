@@ -3,10 +3,10 @@ using System.Collections. Generic;
 using UnityEngine;
 
 
-public class Movement : MonoBehaviour
+public class CarMovement : MonoBehaviour
 {
  
-    public float speed = 5.0f;
+    public float speed = 5;
  
 
 
