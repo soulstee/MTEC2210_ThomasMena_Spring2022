@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5466000123575449043}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e3e47574f52dd249938c2b24ac06f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 15
 --- !u!61 &5466000123575449042
 BoxCollider2D:
   m_ObjectHideFlags: 0

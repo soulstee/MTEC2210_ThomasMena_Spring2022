@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections. Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class CarMovement : MonoBehaviour
 {
  
-    public float speed = 5;
+    public float speed = 15.0f;
  
 
 
@@ -26,5 +27,15 @@ public class CarMovement : MonoBehaviour
         float yMovement = yMove * speed * Time.deltaTime;
 
         transform.position += Vector3.right * Time.deltaTime;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(collision.gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Debug.Log("Game Over");
+        }
     }
 }
