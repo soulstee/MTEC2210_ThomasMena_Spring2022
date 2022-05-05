@@ -70,6 +70,8 @@ public class GameManager : MonoBehaviour
         }
 
        car.GetComponent<SpriteRenderer>().color = c;
+       car.GetComponent<SpriteRenderer>().flipX = false;
+
 
         //SpriteRenderer sr = car.GetComponent<SpriteRenderer>();
 
